@@ -14,12 +14,14 @@ meals = ["Gwote", "Masa", "Tuwon Acha", "Fura da Nono", "Kunu", "Miyan Kuka"]
 print(meals)
 meals.insert(-2, "Miyan Taushe")
 print(meals)
-new_meal = meals[1]
-meals.remove(new_meal)
+meals.remove("Masa")
 print(meals)
 
-fura = meals[2]
-meals.remove(fura)
+meals[2], meals[-1] = meals[-1], meals[2]
 print(meals)
-meals.append("Fura da Nono")
+
+meals.sort()
 print(meals)
+
+sorted(meals)
+print("Final list" , meals)
